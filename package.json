@@ -1,8 +1,8 @@
 {
   "name": "easy-json-parse",
   "version": "1.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "Parse your json safely and easily.",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc && npm run update",
     "update": "auto-vers -t",
