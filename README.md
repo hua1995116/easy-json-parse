@@ -42,6 +42,7 @@ use `easy-json-parse` will more easy and safe for `try{} catch{}`.
 
 ## Get started
 
+case: initialValue
 
 ```javascript
 import easyParse from 'easy-json-parse';
@@ -50,6 +51,17 @@ const [error, json] = easyParse(jsonString, {initialValue: {}});
 
 console.log(json.xxx); // If json is not exist, will return {} safely.
 ```
+
+case: normal
+
+```javascript
+import easyParse from 'easy-json-parse';
+const jsonString = '{"easy": "easy"}';
+const [error, json] = easyParse(jsonString);
+
+console.log(json.easy); // easy
+```
+
 
 ## Syntax
 
