@@ -42,6 +42,10 @@ use `easy-json-parse` will more easy and safe for `try{} catch{}`.
 
 ## Get started
 
+```bash
+npm i easy-json-parse
+```
+
 case: initialValue
 
 ```javascript
