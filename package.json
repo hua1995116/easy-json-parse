@@ -7,7 +7,8 @@
   "scripts": {
     "build": "tsc && npm run update",
     "update": "auto-vers -t",
-    "test": "nyc mocha test/*.ts && ./node_modules/.bin/codecov"
+    "test": "nyc mocha test/*.ts",
+    "cover": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "keywords": [
     "easy",
