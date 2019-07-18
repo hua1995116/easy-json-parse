@@ -66,6 +66,15 @@ const [error, json] = easyParse(jsonString);
 console.log(json.easy); // easy
 ```
 
+case: don't need error
+
+```javascript
+import easyParse from 'easy-json-parse';
+const jsonString = '{"easy": "easy"}';
+const [, json] = easyParse(jsonString);
+
+console.log(json.easy); // easy
+```
 
 ## Syntax
 

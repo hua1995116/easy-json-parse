@@ -30,4 +30,10 @@ describe('easy-json-parse', () => {
     const [error, json] = easyParse(jsonString);
     expect(json.easy).to.equal(except);
   })
+  it("don't need error", () => {
+    const except = 'easy';
+    const jsonString = '{"easy": "easy"}';
+    const [, json] = easyParse(jsonString);
+    expect(json.easy).to.equal(except);
+  })
 })
