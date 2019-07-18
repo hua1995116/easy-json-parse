@@ -36,4 +36,24 @@ describe('easy-json-parse', () => {
     const [, json] = easyParse(jsonString);
     expect(json.easy).to.equal(except);
   })
+  it('use reviver', () => {
+    const except = 'easy';
+    const jsonString = '{"easy": "easy"}';
+    const [, json] = easyParse(jsonString, {
+      reviver: (key, value) => (
+        typeof value === 'number' ? value * 2 : value
+      )
+    });
+    expect(json.easy).to.equal(except);
+  });
+  it('use initialValue', () => {
+    const except = 'easy';
+    const jsonString = 'null';
+    const [, json] = easyParse(jsonString, {
+      initialValue: {
+        easy: 'easy'
+      }
+    });
+    expect(json.easy).to.equal(except);
+  });
 })
