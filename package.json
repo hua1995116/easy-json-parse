@@ -1,6 +1,6 @@
 {
   "name": "easy-json-parse",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Parse your json safely and easily.",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
@@ -17,6 +17,14 @@
     "typescript"
   ],
   "author": "hua1995116 <qiufneghyf@gmail.com> (https://github.com/hua1995116)",
+  "homepage": "https://github.com/hua1995116/easy-json-parse",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hua1995116/easy-json-parse"
+  },
+  "bugs": {
+    "url": "https://github.com/hua1995116/easy-json-parse/issues"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/mocha": "^5.2.7",
